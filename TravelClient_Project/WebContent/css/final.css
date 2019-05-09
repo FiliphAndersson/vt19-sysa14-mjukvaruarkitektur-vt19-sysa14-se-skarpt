@@ -178,9 +178,11 @@ input[type="date"], focus {
 	
 }
 
+
+
 .destination-box{
 	width: 300px;
-	font-family: Arial;
+	font-family: sans-serif;
 	position: absolute; 
     top: 200px; 
     left: 800px; 

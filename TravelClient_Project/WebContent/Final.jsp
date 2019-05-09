@@ -22,7 +22,6 @@
   <a href="/TravelClient_Project/Final.jsp">Home</a>
   <img src="images/logga.png" alt="" class="center" />
   <a href="/TravelClient_Project/About.jsp"class="right">About us</a>
-  
   <a href="/TravelClient_Project/Test.jsp"class="right">Test</a>
  
   <span id="degree" class="weather"></span>
@@ -62,22 +61,26 @@
             </div>
             
             <div class ="main">
-            
+        
           
              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
              	Booking Id <br> 
              	<div class ="bookingId">
-             	<input type="text" name="bookingId" id="bookingId" value="" readonly disabled ><br>
+             	<input type="text" name="bookingId" id="bookingId" value="" readonly disabled >  <br>
+             	
 	  		  </div>
 	  		  
 	  		  <br> <br>
+	  		  
 	    <div class ="crudButtonDiv">
 			<input type="button" name="submitBtn" value="Add Booking" id="Addbooking" class="crudButton">
 			<input type="button" name="submitBtn" value="Delete Booking" id="DeleteBookingBtn"class="crudButton"> 
 			<input type="button" name="submitBtn" value="Update Booking" id="UpdateBookingBtn"class="crudButton">
+			<p id="pText" style="color:red;"></p>
+			<br>
 			</div>
 			<br><br>
-            <br> 
+            <br>  <br> 
             <table class="table table-bordered table-striped" id="booking_table">
 				<tr>
 					<th>Booking Id</th>

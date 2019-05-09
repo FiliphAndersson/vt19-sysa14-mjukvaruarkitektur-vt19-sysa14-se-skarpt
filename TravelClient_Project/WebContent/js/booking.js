@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	
+
+	 
 	load_json_data('customer');
 	function load_json_data(id, parent_id)
 	{
@@ -91,7 +93,10 @@ $(document).ready(function(){
 				console.log("Ajax-find Booking: "+status);
 			}
 		}
-	
+		else{
+			changeTextAdd()
+			
+		}
 	})// btnclick
 	
 
@@ -119,6 +124,11 @@ $(document).ready(function(){
 				
 				console.log("Ajax-delete Booking: "+status);
 			}
+		}
+		
+		else{
+			
+			changeTextDelete()
 		}
 	})// btnclick
 	
@@ -155,6 +165,10 @@ $(document).ready(function(){
 			
 				console.log("Ajax-find Destination: "+status);
 			}
+		}
+		
+		else{
+			changeTextDelete()
 		}
 	})// btnclick
 	
@@ -297,11 +311,20 @@ function updateBookings(){
 	
 }
 
-function deleteBookings(){
-	
+
+
+function changeTextDelete() {
+    document.getElementById('pText').innerHTML = "Please select a booking first.";
+}
+
+
+function changeTextAdd() {
+    document.getElementById('pText').innerHTML = "Please make sure all fields are filled out.";
 }
 
 function updateBookingsOnClick(){
+	
+	
 	
 	  
 	$.getJSON("http://localhost:8080/RestServerTravelProject/Customers?method=findBooking", function(data){
