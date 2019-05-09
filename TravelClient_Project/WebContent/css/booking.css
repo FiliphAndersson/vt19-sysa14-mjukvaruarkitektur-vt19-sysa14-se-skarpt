@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Helvetica;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #659DBD;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+.rightSide{
+	background-color: #BC986A;
+    color: #BC986A;
+	
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+ display: inline;
+  font-family: sans-serif;
+  overflow: hidden;
+  background-color: #DAAD86;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+
+
+/* Style the navigation bar links */
+.navbar a {
+	
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar a.left {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  margin-left: 0px;
+	
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+    margin-right: 260px;
+      color: black;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.form-control{
+	width: 200px;
+	font-family: Arial;
+	
+}
+
+.form-control {
+  background-color: DodgerBlue;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.form-control{
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+#booking_table{
+	font-family: Arial;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+#booking_table td, #booking_table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#booking_table tr:nth-child(even){background-color: #f2f2f2;}
+
+#booking_table tr:hover {background-color: #ddd; cursor: pointer;}
+
+input[type=date] {
+  background-color: #DAAD86;
+  border: none;
+  color: white;
+  padding: 4px 6px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#booking_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #DAAD86;
+  color: white;
+  
+}
+
+#customer, #destination {
+	  background-color: #white;
+	
+}
+
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  
+  
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 5%; /* IE10 */
+  flex: 5%;
+  background-color: #DAAD86;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 60%; /* IE10 */
+  flex: 60%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+/* Sidebar RIGHT column */
+.rightSide {
+  -ms-flex: 5%; /* IE10 */
+  flex: 5%;
+  background-color: #DAAD86;
+  padding: 60px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
