@@ -11,29 +11,31 @@
 </script>
 <script src="js/booking.js"></script>
 <link rel="stylesheet" type="text/css" href="css/final.css">
-<title>Insert Booking here</title>
+<title>Home</title>
 </head>
 <body>
 <div class="header">
  
 
   <div class="navbar">
-  <a href="/TravelClient_Project/Final.jsp" class="active">Bookings</a>
-  <a href="/TravelClient_Project/crud.jsp">Customers</a>
-  <a href="/TravelClient_Project/Destination.jsp">Destinations</a>
+
+  <a href="/TravelClient_Project/Final.jsp">Home</a>
+  <img src="images/logga.png" alt="" class="center" />
   <a href="/TravelClient_Project/About.jsp"class="right">About us</a>
+  
   <a href="/TravelClient_Project/Test.jsp"class="right">Test</a>
  
   <span id="degree" class="weather"></span>
-  <span id="weather"class="weather"></span><br>
+  <span id="weather"class="weather"></span>
   <span id="city"class="weather"></span>
   
 </div>
+
 </div>
 
 <div class="image">
 
-      <img src="images/background.jpg" alt="" />
+  <img style="width: 1672px; height:1100px;" src="images/backgroundnew.jpg" alt="" />
 
       		<div class="customer-box">
      	 	<select name ="customer" id="customer" class = "form-control-customer">

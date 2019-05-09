@@ -65,7 +65,7 @@ $(document).ready(function(){
 		var strHomeDate = $("#homeDate").val();
 		var ajaxId = this.id;
 		
-		//alert(strCustomerId + " " + strDestinationId + strDepartureDate + strHomeDate + ajaxId);
+		
 	
 		var obj = { customerId: strCustomerId, destinationId: strDestinationId, departureDate: strDepartureDate, homeDate: strHomeDate, id: ajaxId};
 		var jsonString = JSON.stringify(obj);
@@ -87,7 +87,7 @@ $(document).ready(function(){
 				
 			}
 			function ajaxAddReturnError(result, status, xhr) {
-				alert("Error Add");
+			
 				console.log("Ajax-find Booking: "+status);
 			}
 		}
@@ -111,12 +111,12 @@ $(document).ready(function(){
 				success: ajaxDelReturnSuccess
 			})
 			function ajaxDelReturnSuccess(result, status, xhr) {
-				alert(" success, raderat. ändra denna till ngt bättre.");
+			
 				// LÄGG TILL DENNA METOD clearFields();
 				location.reload()
 			}
 			function ajaxDelReturnError(result, status, xhr) {
-				alert("Error");
+				
 				console.log("Ajax-delete Booking: "+status);
 			}
 		}
@@ -148,12 +148,11 @@ $(document).ready(function(){
 				
 				location.reload();
 				
-				//alert("Update success, replace this") //ERSÄTT DETTA
-			//	$("#id").attr("placeholder","Destination updated" ); //ERSÄTT DETTA.
+	
 			
 			}
 			function ajaxUpdateReturnError(result, status, xhr) {
-				alert("Error Update");
+			
 				console.log("Ajax-find Destination: "+status);
 			}
 		}
